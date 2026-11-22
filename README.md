@@ -53,3 +53,13 @@ MIT
 [![make.fun · news-image-20261122](https://make.fun/badge/news-image-20261122.svg)](https://make.fun/bounty/news-image-20261122?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261122)
 [![rank](https://make.fun/badge/news-image-20261122/geta4133-lgtm/gta6-news-image-20261122/rank.svg)](https://make.fun/bounty/news-image-20261122/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261122)
 [![reward](https://make.fun/badge/news-image-20261122/geta4133-lgtm/gta6-news-image-20261122/reward.svg)](https://make.fun/bounty/news-image-20261122?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261122)
+
+## Verification
+
+Rendered output is deterministic: two independent runs with `MAKEFUN_OUTPUT_DIR=/tmp/v3` and `MAKEFUN_OUTPUT_DIR=/tmp/v4` produced byte-identical PNGs.
+
+```
+sha256sum /tmp/v3/news-image-20261122.png /tmp/v4/news-image-20261122.png
+0be27c4f554c19efe1725533459ee1955221889e00e3317af6aad4fcc468b24d  /tmp/v3/news-image-20261122.png
+0be27c4f554c19efe1725533459ee1955221889e00e3317af6aad4fcc468b24d  /tmp/v4/news-image-20261122.png
+```
